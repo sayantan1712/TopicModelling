@@ -1,0 +1,52 @@
+settings:
+    datasetName: Insta Anti Govt Week 1 Topic
+    dataSource: Insta_Anti_Week1.xlsx
+    corpusFieldName: translated_caption
+    idFieldName: ID
+    dateFieldName: date
+    roundToDay: False
+    optimize_model: False
+    multithreading: False
+    model_type: LDA
+    # Advanced settings
+    passes: 20
+    numberWords: 10
+    numberTopics: 5
+    moving_average_size: 5
+    reloadData: True          # Will re-read input file and train a new model with the updated data
+    retrainModel: True            # Will use the currently saved data and train a new model (useful to try different settings without processing the same corpus)
+    minimumProbability: 0.00000001
+    nbFigures: 5
+    # topicGroups: [[2, 13, 15]]
+    minimumProbability: 0.00000001
+    distributionInWorksheet: True
+    addLegend: True
+    # db_settings:
+    #         host: '144.167.34.17'
+    #         user: 'uponyepunuka'
+    #         password: 'Cosmos1'
+    #         db: 'philippine_south_china_sea'
+    #         query: SELECT video_id, concat(video_title, " ", description) as text, title_toxicity, description_toxicity, title_sentiment, description_sentiment, published_date FROM philippine_south_china_sea.videos where match (video_title, transcript, description) against 
+    #                     ('+((+China +(PLA Navy soldiers) +("South China Sea" "West Philippine Sea" SCS WPS) +(presence  +(friction|concern|worry|alarm|issue|conflict|violate|encroach)) +"artificial islands")
+    #                         (+(Philippine Manila) +navy +(ramp expand buy warship "dream fleet" defenses combat capabilities modern Hyundai "South Korea" asset deter "Anti-access area-denial" A2D2))
+    #                         (+(Leni Robredo "Isko Moreno") +(Protect support back ally) +fishermen)
+    #                         (+China +(Philippine Manila "coast guard") +("do not" avoid refrain avert confront))
+    #                         (+(USA America "United States" U.S. "Indo-Pacific" "Uncle Sam" NATO) +("South China Sea" SCS WPS "West Philippine Sea") +("wolf in sheeps clothing" bully wary instigate conflict panic fear drills| exercises military ambitions disrupt interfere involve leave power nuclear))
+    #                         (+("South China Sea" SCS "West Philippine Sea" WPS China Philippine) +militia  +(fake "identification cards" "military ID" scam "hidden navy") +("big power" "mammoth force" Russia China nuclear superpower NATO West EU Moscow Soviet "Uncle Sam" "Uncle Xi" specul))
+    #                         (+Philippines +China +(Rapprochement nonaligned responsible priority pragmatic renew rebirth mutual trust "comprehensive strategic cooperation" "middle ground" "good-neighbourly" "friendly policy" continuity stability))
+    #                         (+(Duterte Duts Dutz Digong Tatay PRRD)  DDS  +(jetski "jet ski") "Philippine flag")
+    #                         (+"Philippine sovereignty" +harass +("exercise restraint" "maintain peace" "mutual agreement" "diffuse tension" cooperate engage positive "warm ties" "set aside differences" dialogue "peaceful resolution" safety friendship "mutually agreeable" "functional cooperation"))
+    #                         (+Philippine  +China  "learn from"  +(Ukraine war battl fight invad commit "stand up"))
+    #                         (+Philippine  +China  "avoid"  +"the vortex of war")
+    #                         (+(China PRC Beijing CCP)  +(Manila Phili)  +(friend diploma partner "win-win" cooperat strive thrive "common destiny" mankind coexist forge foster relations care love))
+    #                         (+(Russia Ukraine)  distracts  +(China Taiwan)  +Philippine)
+    #                         (+Rappler  +revolution +(West foreign fund support incite antigovern violent riot protest "Hong Kong"))
+    #                         (+China  +priority  +Philippines  +"neighborhood diplomacy")
+    #                         (+(SCS Philippine China) +("no quarrel" deny partner enhance gratitude thank applaud invest infrastructure relation promise normalize grow strong destination trade major close ties network tech fund project equity friend "good friend"))
+    #                         (+(Philippine Duterte)  +(national benefit independent "foreign policy" advance "Philippine interest" welfare "right to self-determination" "self-determination" balance wellbeing "all Filipino people"))
+    #                         (+Philippine +Ukraine +("special operation" demilitarization nazi "peace mission" "no plans to occupy"))
+    #                         (+Ukraine  +Philippines  +(learn crush watch fool gago))
+    #                         (+("Stand Up" "too friendly" "stand our ground") +China  +("big neighbor" "Uncle Xi" threat danger bully Philippine mistake meek weak "wiped out" "war ship"))
+    #                         (+Philippine +(Ukraine NATO China)  +Donbas +(commit genocide "ethnic russians" Russophobia))
+    #                         (+("South China Sea" SCS "West Philippine Sea" WPS)  +(Sinophobia neutral "non-interference" "non-political cooperation" peaceful coexistence friendship dialogue "cant afford war")))' in boolean mode)
+    #         encoding: utf-8
